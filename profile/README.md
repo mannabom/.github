@@ -13,14 +13,16 @@
 - 메시지 요청 보내기 (간단한 메시지 첨부)
 - 후기 작성 및 별점 평가
 - 푸시 알림(FCM) 기반 이벤트 안내
+- 미팅 매칭
+- 채팅
 
 ## 기술 스택
 
 - Backend: Java, Spring Boot, Spring Data JPA
-- Database: PostgreSQL
+- Database: PostgreSQL, Flyway
 - Infra: AWS (EC2, S3)
 - Push: Firebase Cloud Messaging (FCM)
-- Build/Dev: Gradle, Docker Compose
+- Build/Dev: Gradle, Docker Compose, Github Actions
 
 ## 레포지토리 안내
 
@@ -46,6 +48,6 @@
 ## 팀
 
 - 김준언(BE): 백엔드 개발. Spring Boot 기반으로 API 설계와 구현을 담당했고, 도메인 모델링(JPA), 데이터베이스 설계/쿼리 최적화, 더미 데이터 구성 및 테스트 환경 정리를 진행했습니다. 또한 AWS 환경(EC2/S3) 기반 배포 흐름과 운영 관점에서 필요한 설정, 푸시 알림(FCM) 연동 및 전송 안정화 같은 인프라·연동 작업에도 참여했습니다.
-- 임세희(BE):
+- 임세희(BE): 백엔드 개발. Spring Boot 기반으로 API 설계와 구현을 담당했습니다. 운영 안정성을 위해 Flyway를 도입하여 DB 스키마 형상 관리를 자동화하고, 팀원 간의 데이터베이스 환경 불일치 문제를 해결했습니다. 또한 GitHub Actions와 Docker Compose를 연동하여 빌드부터 운영 서버(AWS EC2) 배포까지의 CI/CD 파이프라인을 구축하였습니다.
 - 김동성(FE):
 - 송성근(DS):
